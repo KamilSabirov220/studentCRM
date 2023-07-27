@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2 ?family=Dancing+Script:wght@400 ;700&family=Roboto:wght@400 ;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.page-header {
+    background-color: #2d2d44;
+}
+
+.page-header-inner {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.page-header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-header-top {
+    color: white;
+}
+
+.page-header-top nav {
+    font-weight: bolder;
+}
+
+.header-sett {
+    --bs-nav-link-color: white;
+}
+
+.selection-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.block-sett {
+    font-size: 20px;
+    --bs-nav-link-color: #000000;
+    --bs-nav-link-hover-color: #000000;
+}
+
+.block-sett li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.info-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.form-creating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-modification {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-logout {
+    padding-top: 50px;
+}
+
+.label-form {
+    padding-right: 100px;
+}
+
+.dev-button {
+    border-color: #302683;
+    background-color: #302683;
+}
+
+.dev-button:hover {
+    background-color: #3F3CCB;
+}
+
+.dev-button-creat {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.dev-button-logout {
+    padding-left: 136px;
+    padding-right: 136px;
+    margin-bottom: 10px;
+}
+
+.logout-pass-butt {
+    padding-left: 111px;
+    padding-right: 111px;
+    margin-bottom: 20px;
+}
+
+.reg {
+    padding-right: 95px;
+}
+
+.logout-nav {
+    text-decoration: none;
+}
+
+.logout-reg-menu {
+    text-decoration: none;
+    padding-left: 135px;
+}
+
+.dev-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.middle-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.nav-stud-list {
+    font-size: 14px;
+}
+
+.nav-stud-list a:hover {
+    text-decoration: underline;
+}
+
+.middle-block-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.table-block {
+    padding-bottom: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.table thead th {
+    background-color: #E5E5E5;
+}
+
+.table {
+    border: 1px solid #B5B5B5;
+}
+
+.discipline_mark_term {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discipline_mark_term th {
+    padding-right: 85px;
+}
+
+.s-p-select-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.s-p-select-form p {
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+.back-button {
+    margin-left: 100px;
+}
+
+.table-discipline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.table-discipline-block th {
+    padding-right: 50px;
+}
+
+.table-discipline-block td {
+    padding-right: 100px;
+}
+
+.nav-menu-discipline {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+} 
+
+.nav-menu-discipline a {
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.nav-menu-discipline a:hover {
+    text-decoration: underline;
+}
+
+.terms-list-main {
+    display: flex;
+    justify-content: center;
+}
+
+.term-list-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.terms-select-form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+.terms-select-form p {
+    padding-top: 20px;
+}
+
+.info-block-terms {
+    padding-left: 25px;
+}
+
+.term-creating-select-form {
+    padding-bottom: 20px;
+}
