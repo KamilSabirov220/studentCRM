@@ -31,25 +31,49 @@
         </div>
     </div>
 </header>
-<div class="page-content">
-    <div class="selection-block">
-        <div class="block-menu">
-            <ul class="nav nav-underline block-sett">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/student">Студенты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/discipline_list">Дисциплины</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="terms_list.html">Семестры</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="info-block">
+    <h5>Список дисциплин</h5>
 </div>
 
-
+<div class="table-block table-discipline">
+    <div class="table-discipline-block">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Наименование дисциплины</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td>Высшая математика</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td>История Науки и Техники</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td>Политология</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td>Информатика</td>
+            </tr>
+            <tr>
+                <th scope="row"></th>
+                <td>История Алгоритмизации</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="nav-menu-discipline">
+        <a href="/discipline_creating">Создать дисциплину...</a>
+        <a href="/discipline_modifying">Модифицировать выбранную дисциплину...</a>
+        <a href="#">Удалить выбранную дисциплину</a>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>

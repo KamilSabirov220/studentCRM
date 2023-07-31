@@ -32,19 +32,21 @@
     </div>
 </header>
 <div class="page-content">
-    <div class="selection-block">
-        <div class="block-menu">
-            <ul class="nav nav-underline block-sett">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/student">Студенты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/discipline_list">Дисциплины</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="terms_list.html">Семестры</a>
-                </li>
-            </ul>
+    <div class="middle-block">
+        <div class="info-block">
+            <h5>Для того чтобы создать новую дисциплину заполните все поля и нажмите кнопку "Создать".</h5>
+        </div>
+        <div class="form-creating">
+            <form>
+                <div class="row mb-3">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label label-form">Название</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary dev-button dev-button-creat">Создать</button>
+                <button type="submit" class="btn btn-primary dev-button"><a href="/discipline_list">Назад</a></button>
+            </form>
         </div>
     </div>
 </div>
