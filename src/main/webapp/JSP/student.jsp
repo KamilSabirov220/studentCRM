@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,13 +39,14 @@
                 <a class="nav-link" aria-current="page" href="student_progress.html">Посмотреть успеваемость выбранных студентов</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="students_creating.html">Создать студента...</a>
+                <a class="nav-link" href="/students_creating">Создать студента...</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="student_modifying.html">Модифицировать выбранного студента...</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Удалить выбранных студентов</a>
+                <input class="nav-link" type="submit" value="Удалить выбранных студентов" onclick="deleteStudents()">
+                <%--<a class="nav-link" type="submit" onclick="deleteStudents()" href="#">Удалить выбранных студентов</a>--%>
             </li>
         </ul>
     </div>
@@ -61,18 +63,27 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Сабиров</td>
-                <td>Камиль</td>
-                <td>Ахтямович</td>
-                <td>17.03.2023</td>
-            </tr>
+            <c:forEach items="${students}" var="st">
+                <tr>
+                    <th><input type="checkbox" value="${st.id}" name="idStudent"></th>
+                    <td>${st.sur_name}</td>
+                    <td>${st.name}</td>
+                    <td>${st.group}</td>
+                    <td>${st.date_in}</td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
     </div>
 </div>
+<form id="deleteStudentForm" action="/deleteStudent" method="post">
+    <input type="hidden" id="deleteStudentHidden" name="deleteStudentHidden">
+</form>
+<form id="modifyStudentForm" action="/modifyStudent" method="get">
+    <input type="hidden" id="modifyStudentHidden" name="modifyStudentHidden">
+</form>
 
+<script src="../resources/js/functions.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 </body>

@@ -45,26 +45,12 @@
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <th scope="row"></th>
-                <td>Высшая математика</td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td>История Науки и Техники</td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td>Политология</td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td>Информатика</td>
-            </tr>
-            <tr>
-                <th scope="row"></th>
-                <td>История Алгоритмизации</td>
-            </tr>
+            <c:forEach items="${disciplines}" var="ds">
+                <tr>
+                    <th><input type="checkbox" name="${ds.id}"></th>
+                    <td>${ds.discipline_name}</td>
+                </tr>
+            </c:forEach>
             </tbody>
         </table>
     </div>
